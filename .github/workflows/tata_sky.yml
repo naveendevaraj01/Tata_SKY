@@ -72,11 +72,11 @@ jobs:
             cd ../..
             rm -rf .git
             cd ..
-            git clone https://${{ github.event.inputs.git_token }}@github.com/${{ github.event.inputs.git_id }}/MyTataSky-Daily
-            rm -rf MyTataSky-Daily/*
-            rm -rf MyTataSky-Daily/.github
-            mv Tata-Sky-IPTV/* MyTataSky-Daily/
-            mv Tata-Sky-IPTV/.github MyTataSky-Daily/
+            git clone https://${{ github.event.inputs.git_token }}@github.com/${{ github.event.inputs.git_id }}/Tata_SKY
+            rm -rf Tata_SKY/*
+            rm -rf Tata_SKY/.github
+            mv Tata-Sky-IPTV/* Tata_SKY/
+            mv Tata-Sky-IPTV/.github Tata_SKY/
             cd MyTataSky-Daily/
             git add .
             git commit --author="Naveendevaraj01<naveendevaraj01@gmail.com>" -m "Update Repo"
